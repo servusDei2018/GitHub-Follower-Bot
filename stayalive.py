@@ -16,5 +16,4 @@ def home():
 def start():
   app.run(host=host['ip'], port=host['port'])
 
-# thread = threading.Thread(target=start)
-# thread.start()
+# threading.Thread(target=start).start()
