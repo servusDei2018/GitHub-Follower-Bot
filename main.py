@@ -1,4 +1,4 @@
-# If you don't see the virutal computer running it's probably doing it in the background
+# If you don't see the virtual computer running then it's probably running in the background
 
 import webbot
 import bruteforce
@@ -48,11 +48,10 @@ def start():
         time.sleep(0.50)
         if a > 50:
             a = 0
-            i = i + 1
+            i += 1
         username = bruteforce.generate_text(i)
         follow(username)
-        a = a + 1
+        a += 1
 
 a = threading.Thread(target=start)
 a.start()
-
